@@ -14,7 +14,7 @@ date: "`r Sys.Date()`"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## The data comes from the 1998 General Social Survey answer this question
+# The data comes from the 1998 General Social Survey answer this question
 
 $H_0$ There is no difference among the various races with frequency of eating out  
 $H_A$ There is a statistical difference between at least two races with the frequency of eating out  
@@ -32,11 +32,20 @@ mydata <- select(GSS,race,age,eatout)
 mydata <- na.omit(mydata)
 ```
 
-## Methods 
+# Methods 
 
 The response variable is categorical. Which is, did you dine out last week? The explanatory variable is race: another categorical variable. The reponse variavle fits under yes or no thus, it's categorical. For race, we know from past experience that it is for sure a categorical variable. So we use cat~cat. Thus, we'll a chi squared test and a fisher exact test. The inferential test will be done by the chi squared test & the fisher exact test. 
 
+# Descriptive summaries
+
+## Graphical Descriptive Results
+
+### BarchartGC
+
+```{r}
+barchartGC(~race + eatout,data=mydata)
+barchartGC(~race + eatout,data=mydata, type="percent")
+``` 
 
 
-
-
+White tends to be the outlier in this bar plot. Since their percent of dining out is the highest (close to 85% of white people dine out according to this bar plot). Black & other are relatively the same with 'other' only being a slightly higher. There is a cler difference so far since one of the 3 examples is way higher than the other 2. 
