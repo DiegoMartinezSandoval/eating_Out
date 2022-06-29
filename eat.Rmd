@@ -1,6 +1,6 @@
 ---
 title: "Eating Out"
-author: "your name here"
+author: "Diego Martinez"
 output: 
   html_document:
     number_sections: true
@@ -31,9 +31,6 @@ GSS <- droplevels(GSS)
 mydata <- select(GSS,race,age,eatout)
 mydata <- na.omit(mydata)
 ```
-
-
-
 
 
 
