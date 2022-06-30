@@ -69,16 +69,16 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The p-value is  0.000002287. The p-value is too small so we have to reject the null hypothesis. There IS a difference between race and how frequent they dine out. That's what the chi squared test gave us. 
+The p-value is  0.000002287. The p-value is too small so we have to reject the null hypothesis. The p-value for the Fisher's Exact test is .000004633. This only further supports my choice to reject the null hypothesis. The fisher exact test further tells us soemthing about the laternative hypotheses. It stats that the alternative hypothesis is two-sided.   There IS a difference between race and how frequent they dine out. That's what the chi squared test gave us. 
 
 ```{r}
 fisherXY(mydata$race,mydata$eatout)
 ```
 
-The p-value for the fisher exact test (white&black) is 0.00001183. The p-value for (white&other) is .00721. Thus, there is clear evidence so we can reject the null hypothesis. White people are double as likely to eat out compared to black people. 
+The p-value for the fisher exact test (white&black) is 0.00001183. The p-value for (white&other) is .00721. The fisher exact test even gives us the confidence intervals and alternative hypotheses. It inferences that the alternative hypotheses in this case is correct. A good value for the first confidence interval is 1.96. In this case, it's lower (further proving the alternative hypotheses). Thus, there is clear evidence so we can reject the null hypothesis. White people are double as likely to eat out compared to black people. 
 
 # Discussion and Conclusion
 
-The original question was if race and the amount of times each went out to dine mattered. If whether these two categorical values were dependent or independent from one another. We cam conclude that the race and how often they dined out were different from one another. They are dependent. We reject the null hypotheses because all p-values we adressed were lower than .05. 
+The original question was if race and the amount of times each went out to dine mattered. If whether these two categorical values were dependent or independent from one another. We cam conclude that the race and how often they dined out were different from one another. They are dependent. We reject the null hypotheses because all p-values we addressed were lower than .05. 
 
 
