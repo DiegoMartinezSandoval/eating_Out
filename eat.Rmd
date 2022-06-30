@@ -69,7 +69,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The p-value is  0.000002287. The p-value is too small so we have to reject the null hypothesis. The p-value for the Fisher's Exact test is .000004633. This only further supports my choice to reject the null hypothesis. The fisher exact test further tells us soemthing about the laternative hypotheses. It stats that the alternative hypothesis is two-sided.   There IS a difference between race and how frequent they dine out. That's what the chi squared test gave us. 
+The p-value is  0.000002287. The p-value is too small so we have to reject the null hypothesis. The p-value for the Fisher's Exact test is .000004633. This only further supports my choice to reject the null hypothesis. There IS a difference between race and how frequent they dine out. That's what the chi squared test gave us. 
 
 ```{r}
 fisherXY(mydata$race,mydata$eatout)
