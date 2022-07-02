@@ -75,7 +75,7 @@ The p-value is  0.000002287. The p-value is too small so we have to reject the n
 fisherXY(mydata$race,mydata$eatout)
 ```
 
-The p-value for the fisher exact test (white&black) is 0.00001183. The p-value for (white&other) is .00721. The fisher exact test even gives us the confidence intervals and alternative hypotheses. It inferences that the alternative hypotheses in this case is correct. A good value for the first confidence interval is 1.96. In this case, it's lower (further proving the alternative hypotheses). Thus, there is clear evidence so we can reject the null hypothesis. White people are double as likely to eat out compared to black people. 
+There is a statistical difference between at least two races in regard to the frequency of eating out.  I reject the null hypothesis the p-value is 0.000002287 much less than 0.05.  When comparing white to black individuals  whites tend to eat out more frequently with a ratio of  2.2:1 when compared to other individuals whites are more 1.9 times more likely to eat out. By using the fisher exact test I am able to prove that whites are more likely to eat out more frequently than black and others. Therefore, with cetainly allowing me to  reject the null hypothesis.
 
 # Discussion and Conclusion
 
